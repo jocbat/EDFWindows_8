@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.0.6/css/ui-light.css" rel="stylesheet">
+        <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
+        <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+        
+        <script src="/js/plugins/jquery.js" ></script>
+        <script src="/js/plugins/xml2json.js" ></script>
+
+        <script src="/js/data/frontpage-data.js" ></script>
+        <script src="/js/frontpage.js" ></script>
+        
+        <link href="/css/default.css" rel="stylesheet">
+        <link href="/css/frontpage.css" rel="stylesheet">
+    
+    </head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="itemdetailpage fragment rootPage">
+        
+        <header class="frontPageHeader" aria-label="Header content" role="banner" 
+            style="">
+                <h1 style="-ms-grid-row: 1">
+                    <img onclick="WinJS.Navigation.navigate('/pages/frontpage.html');" class="EDFLogo" 
+                        src="/images/edflogo.png"  /> 
+                </h1>
+            
+                <ul class="navMenu">
+                    <li id="MEDIAS" onclick="WinJS.Navigation.navigate('/pages/medias.html');" class="nav-menu-item">MEDIAS</li>
+                    <li id="ACTION" onclick="WinJS.Navigation.navigate('/pages/stock.html');" class="nav-menu-item">ACTION EDF</li>
+                    <li id="UNE" class="nav-menu-item">ESSENTIEL</li>
+                    <li id="VIDEOS" class="nav-menu-item">VIDEOS</li>
+                    <li id="AGENDA" onclick="WinJS.Navigation.navigate('/pages/agenda.html');" class="nav-menu-item">AGENDA</li>
+                </ul> 
+        </header>
+
+        <section aria-label="Main content" role="main" style="overflow-y: hidden">
+            
+            
+            <div class="FrontImageTemplate item-template" >
+                <div class="frontImage" >
+
+                </div>
+            </div>
+            
+            <div class="FrontItemTemplate item-template" >
+                    <div class="frontItem">
+                        <span class="blueRect"></span>
+                        <span class="date"></span>
+                        <img class="itemImg"  />
+                        <span class="itemSubject"></span>
+                        <p class="itemContent" ></p>
+                    </div>
+            </div>
+
+
+
+
+
+            <div id="DisplayedContent" style="display: -ms-box; -ms-box-orient: horizontal; ">
+                
+                <div class="frontItems FrontItemsListView">
+                    <!--
+                    <div class="frontItem">
+                        <span class="blueRect"></span>
+                        <span class="date">16/12/1222</span>
+                        <img class="itemImg" src="http://back-ipad.edf.com.edf-partage-ipad-01-natpub.edf.lbn.fr/weceem/WeceemFiles/_ROOT/Image/alaune/Unes_iPad_20120216_2011.png" />
+                        <span class="itemSubject">Résultats 2011</span>
+                        <p class="itemContent" >Des résultats solides et engagements tenus dans un contexte troublé. Une excellente performance industrielle.</p>
+                    </div>
+                    <div class="frontItem">
+                        <span class="blueRect"></span>
+                        <span class="date">16/12/1222</span>
+                        <img class="itemImg" src="http://back-ipad.edf.com.edf-partage-ipad-01-natpub.edf.lbn.fr/weceem/WeceemFiles/_ROOT/Image/alaune/Unes_iPad_20120202_kersale.png" />
+                        <span class="itemSubject">Résultats 2011</span>
+                        <p class="itemContent" >Des résultats solides et engagements tenus dans un contexte troublé. Une excellente performance industrielle.</p>
+                    </div> -->
+                </div>
+                
+                <!--class="frontOthers"-->
+                <article class="frontOthers">
+                        <!--class="frontImages "-->
+                        <div class="FrontImagesListView frontImages " >
+                        </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

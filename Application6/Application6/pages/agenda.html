@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.0.6/css/ui-light.css" rel="stylesheet">
+        <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
+        <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+        
+        <script src="/js/plugins/jquery.js" ></script>
+        <script src="/js/plugins/xml2json.js" ></script>
+        
+        <script src="/js/data/agenda-data.js" ></script>
+        <script src="/js/agenda.js" ></script>
+        <script src="/js/agenda-canvas-manager.js" ></script>
+        
+        <link href="/css/default.css" rel="stylesheet">
+        <link href="/css/agenda.css" rel="stylesheet">
+    
+    </head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="itemdetailpage fragment rootPage">
+        
+        <header class="frontPageHeader" aria-label="Header content" role="banner" 
+            style="">
+                <h1 style="-ms-grid-row: 1">
+                    <img onclick="WinJS.Navigation.navigate('/pages/frontpage.html');" class="EDFLogo" 
+                        src="/images/edflogo.png"  /> 
+                </h1>
+            
+                <ul class="navMenu">
+                    <li id="MEDIAS" onclick="WinJS.Navigation.navigate('/pages/medias.html');" class="nav-menu-item">MEDIAS</li>
+                    <li id="ACTION" onclick="WinJS.Navigation.navigate('/pages/stock.html');" class="nav-menu-item">ACTION EDF</li>
+                    <li id="UNE" class="nav-menu-item">ESSENTIEL</li>
+                    <li id="VIDEOS" class="nav-menu-item">VIDEOS</li>
+                    <li id="AGENDA" onclick="WinJS.Navigation.navigate('/pages/agenda.html');" class="nav-menu-item nav-item-selected">AGENDA</li>
+                </ul> 
+        </header>
+        
+        <section aria-label="Main content" role="main" style="overflow-y: hidden; ">
+
+            <div class="splitted-div" style="height: 100%; display: -ms-grid; -ms-grid-columns: auto 1fr; -ms-grid-rows: 1fr">    
+                <canvas id="agendaDisplay" style="-ms-grid-column: 1;" >
+
+                </canvas>
+
+                <div id="agendaDetails" style="-ms-grid-column: 2; padding: 30px">
+                    
+                    <h1 id="agendaDetailsTitle" ></h1>
+                    <p id="agendaDetailsLieu"></p>
+                    <p id="agendaDetailsDate"></p>
+                    <div style="display: -ms-grid; -ms-grid-columns:  auto 1fr;">
+                        <div id="agendaDetailsDescription" style="-ms-grid-column: 2">
+
+                        </div>
+                        <div id="agendaDetailsImage" style="-ms-grid-column: 1">
+                            <img src="#" style="display: none" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

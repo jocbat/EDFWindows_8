@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.0.6/css/ui-light.css" rel="stylesheet">
+        <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
+        <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+        
+        <script src="/js/plugins/jquery.js" ></script>
+        <script src="/js/plugins/xml2json.js" ></script>
+
+        <script src="/js/data/medias-data.js" ></script>
+        <script src="/js/medias.js" ></script>
+        
+        <link href="/css/default.css" rel="stylesheet">
+        <link href="/css/medias.css" rel="stylesheet">
+    
+    </head>
+    <body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="itemdetailpage fragment rootPage">
+        
+        <header class="frontPageHeader" aria-label="Header content" role="banner" 
+            style="">
+                <h1 style="-ms-grid-row: 1">
+                    <img onclick="WinJS.Navigation.navigate('/pages/frontpage.html');" class="EDFLogo" 
+                        src="/images/edflogo.png"  /> 
+                </h1>
+            
+                <ul class="navMenu">
+                    <li id="MEDIAS" class="nav-item-selected nav-menu-item">MEDIAS</li>
+                    <li id="ACTION" class="nav-menu-item">ACTION EDF</li>
+                    <li id="UNE" class="nav-menu-item">ESSENTIEL</li>
+                    <li id="VIDEOS" class="nav-menu-item">VIDEOS</li>
+                    <li id="AGENDA" class="nav-menu-item">AGENDA</li>
+                </ul> 
+        </header>
+        
+        <div class="ItemTemplate" data-win-control="WinJS.Binding.Template">
+            <div class="header-template" data-win-bind="style.display:displaygroup;textContent:group.label"></div>
+            <div class="item-sample" data-win-bind="style.display:displayitem" >
+                <span class="item-date" data-win-bind="textContent:date" style="" ></span>    
+                <span class="item-title" data-win-bind="textContent:title"></span>
+            </div>
+        </div>
+
+        <div class="ItemHeaderTemplate" data-win-control="WinJS.Binding.Template"> 
+            <span data-win-bind="textContent:label"></span>
+        </div>
+
+        <section aria-label="Main content" role="main" style="overflow: hidden">
+            <div class="splitted-div" style="height: 100%; display: -ms-grid; -ms-grid-columns: 50% 50%; -ms-grid-rows: 1fr">
+
+                    <div class="ItemsList  items-list"  data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'single', tapBehavior: 'directSelect' }">
+                    
+                    </div>
+                <div class="ItemDetails item-details" style="">
+                    
+                        <h1 class="BindedDetail item-title" style="" data-win-bind="textContent: fulltitle"></h1>
+                        <br />
+                        <div class="BindedDetail item-content" data-win-bind="innerHTML: content"></div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    </body>
+</html>

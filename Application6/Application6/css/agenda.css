@@ -1,0 +1,30 @@
+﻿body {
+}
+
+div#agendaDetails {
+    
+}
+
+    div#agendaDetails #agendaDetailsTitle {
+        margin-bottom:0.1em ;
+    }
+    
+    div#agendaDetails #agendaDetailsDescription {
+        margin: 0 2em 0 2em;
+        text-align: justify
+    }
+    
+    div#agendaDetails #agendaDetailsDate {
+        font-size: 2em;
+        font-weight: bolder;
+        color: #ff6a00;
+        margin-top: 0
+    }
+    
+    div#agendaDetails #agendaDetailsLieu {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 0
+    }
+
+

@@ -1,0 +1,28 @@
+﻿.figures-div {
+    margin: 0 15px; text-align: left; display: -ms-grid; -ms-grid-columns: 1fr 1fr 1fr ;     
+}
+
+    .figures-div .current {
+        -ms-grid-column: 1;   
+    }
+    
+    .figures-div .selected {
+        -ms-grid-column: 2;   
+    }
+    
+    .figures-div .difference{
+        -ms-grid-column: 3;   
+    }
+
+.stock-display {
+    
+}
+
+    .stock-display .title {
+        font-size: 0.8em;
+    }
+
+    .stock-display .figure {
+        font-size: 3em;
+    }
+    

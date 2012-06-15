@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.0.6/css/ui-light.css" rel="stylesheet">
+        <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
+        <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+         
+        <script src="/js/plugins/jquery.js" ></script>
+        <script src="/js/plugins/xml2json.js" ></script>
+        <script src="/js/plugins/highstock.js" ></script>
+        <script src="/js/data/stock-data.js" ></script>
+        <script src="/js/stock.js" ></script>
+        
+        <link href="/css/default.css" rel="stylesheet">
+        <link href="/css/stock.css" rel="stylesheet">
+
+        
+		
+    </head>
+    <body>
+        
+        <header class="frontPageHeader" aria-label="Header content" role="banner" 
+            style="">
+                <h1 style="-ms-grid-row: 1">
+                    <img onclick="WinJS.Navigation.navigate('/pages/frontpage.html');" class="EDFLogo" 
+                        src="/images/edflogo.png"  /> 
+                </h1>
+            
+                <ul class="navMenu">
+                    <li id="MEDIAS" class="nav-menu-item">MEDIAS</li>
+                    <li id="ACTION" class="nav-item-selected nav-menu-item">ACTION EDF</li>
+                    <li id="UNE" class="nav-menu-item">ESSENTIEL</li>
+                    <li id="VIDEOS" class="nav-menu-item">VIDEOS</li>
+                    <li id="AGENDA" class="nav-menu-item">AGENDA</li>
+                </ul> 
+        </header>
+        
+        <section aria-label="Main content" role="main" style="overflow: hidden">
+            <div class="figures-div">
+                <div class="stock-display current" >
+                    <div class="title">Cours Actuel</div>
+                    <div class="figure"></div>
+                </div>
+                <div class="stock-display selected" >
+                    <div class="title"></div>
+                    <div class="figure"></div>
+                </div>
+                <div class="stock-display difference" >
+                    <div class="title"></div>
+                    <div class="figure"></div>
+                </div>
+            </div>
+            <div id="container" style="height: 500px; min-width: 500px"></div>
+        </section>
+        <script type="text/javascript">
+
+		</script>
+    </body>
+</html>

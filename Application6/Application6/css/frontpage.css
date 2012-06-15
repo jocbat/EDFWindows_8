@@ -1,0 +1,59 @@
+﻿
+.rootPage {
+    width: 100%
+}
+
+header.frontPageHeader[role=banner] {
+    margin-left: 10px;
+    width: 100%; 
+    display: -ms-grid;
+    -ms-grid-rows: 70px 60px 0px; 
+    -ms-grid-columns: 100%; 
+}
+
+
+img.EDFLogo {
+    width: 110px; height: 50px; margin-top: 10px
+}
+
+div.frontItems {
+    margin-left: 10px; margin-right: 20px; height: 600px; float: left; position: relative; width: 400px;  display: inline-block
+}
+
+div.frontItem {
+    height: 50%; background: #efefef; overflow: hidden; border-bottom: solid 2px #fff 
+}
+
+    div.frontItem span.blueRect {
+        display: inline-block;background: #44f; height: 0.7em; width: 5em
+    }
+    
+    div.frontItem span.date {
+        font-weight: 500
+    }
+
+    div.frontItem img.itemImg {
+        margin: 1em 0 1em 0; height: 160px; width: 400px
+    }
+
+    div.frontItem span.itemSubject {
+        font-weight: 600; color: #55f;padding: 0 10px 0 10px;
+    }
+
+    div.frontItem p.itemContent {
+        font-size:0.8em;  margin: 0; padding: 0 10px 0 10px;text-align: justify
+    }
+
+
+section[role=main] article.frontOthers {
+    column-width: 200px;padding-right: 80px; margin-left: 10px;margin-right: 10px
+}
+
+    section[role=main] article.frontOthers div.frontImages {
+        margin-left:10px 
+    }
+
+        section[role=main] article.frontOthers div.frontImages div.frontImage {
+            width: calc(100% - 10px);height: 600px; background-position: 100% 40% ;break-before:avoid-column; break-inside: avoid-column; break-after: column;
+        }
+
