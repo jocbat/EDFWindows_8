@@ -57,6 +57,11 @@
     <Content Include="css\stock.css" />
     <Content Include="images\edfapplogo.png" />
     <Content Include="images\edflogo.png" />
+    <Content Include="images\photo01_portrait.png" />
+    <Content Include="images\photo02_portrait.png" />
+    <Content Include="images\photo03_portrait.png" />
+    <Content Include="images\Unes_iPad_20120202_kersale.png" />
+    <Content Include="images\Unes_iPad_20120216_2011.png" />
     <Content Include="js\agenda-canvas-manager.js" />
     <Content Include="js\agenda.js" />
     <Content Include="js\data.js" />

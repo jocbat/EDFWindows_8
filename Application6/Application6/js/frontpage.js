@@ -37,17 +37,22 @@
             data.FrontPageImages.forEach(function (item) {
                 var jqtemp = $('.FrontImageTemplate div:first-child').clone();
                 //jqtemp.css('background', 'url(' + item.url+ ') 100% 40%');
-                jqtemp.css('background', 'url(' + infos.Root + '/' + item.portrait + ') 100% 40%');
+                jqtemp.css('background', 'url('  + item.portrait + ') 100% 40%');
+
+                //var test = infos.Root + '/' + item.portrait;
+
+
                 jqtemp.appendTo($('.FrontImagesListView'));
             });
-            //alert($('.FrontImagesListView').html());
+            //alert($('.FrontImagesListView').html());(
 
             data.FrontPageItems.forEach(function (item) {
                 var jqtemp = $('.FrontItemTemplate div:first-child').clone();
                 jqtemp.children('.date').html(item.date);
                 jqtemp.children('.itemSubject').html(item.chapeau);
                 jqtemp.children('.itemContent').html(item.content);
-                jqtemp.children('.itemImg').attr('src', infos.Root + item.urlimage);
+                jqtemp.children('.itemImg').attr('src', item.urlimage);
+                var test = infos.Root + item.urlimage;
                 jqtemp.appendTo($('.FrontItemsListView'));
             });
 
