@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
     var events
-    WinJS.xhr({ url: infos.AgendaItems }).then(function (content) {
+    WinJS.xhr({ url: "/images/agenda_data.html" }).then(function (content) {
         events = xml2json.parser(content.responseText).root.agenda.event
         agendaCanvasManager(events, 'agendaDisplay', 'agendaDetails')
         WinJS.Namespace.define("data", {

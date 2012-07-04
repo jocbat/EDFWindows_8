@@ -55,6 +55,7 @@
     <Content Include="css\frontpage.css" />
     <Content Include="css\medias.css" />
     <Content Include="css\stock.css" />
+    <Content Include="images\agenda_data.html" />
     <Content Include="images\edfapplogo.png" />
     <Content Include="images\edflogo.png" />
     <Content Include="images\photo01_portrait.png" />
