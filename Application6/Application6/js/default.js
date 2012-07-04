@@ -35,7 +35,9 @@
         AgendaItems: 'http://back-ipad.edf.com.edf-partage-ipad-01-natpub.edf.lbn.fr/PublishServer-0.1/agenda/show',
         Settings: 'http://back-ipad.edf.com.edf-partage-ipad-01-natpub.edf.lbn.fr//PublishServer-0.1/settings/show',
         Media: 'http://www.edf.com/rss-pour-ipad-2588.html',
-        Stock: 'http://chronocomprod.glmultimedia.com/EDF/Tablette/Historique/EDF_2012.xml'
+        Stock: 'http://chronocomprod.glmultimedia.com/EDF/Tablette/Historique/EDF_2012.xml',
+        ImagesLocales: '/ressources_statiques/images/',
+        PagesMockLocales: '/ressources_statiques/pages_mock/'
     });
 
     app.start();

@@ -5,7 +5,7 @@
     <DisplayName>Application6</DisplayName>
     <Description>Application6</Description>
     <PublisherDisplayName>utest</PublisherDisplayName>
-    <Logo>images\storelogo.png</Logo>
+    <Logo>ressources_statiques\images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2</OSMinVersion>
@@ -16,9 +16,9 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="EDF Demo" Logo="images\edfapplogo.png" SmallLogo="images\smalllogo.png" Description="Application6" ForegroundText="dark" BackgroundColor="#000000">
+      <VisualElements DisplayName="EDF Demo" Logo="ressources_statiques\images\edfapplogo.png" SmallLogo="ressources_statiques\images\smalllogo.png" Description="Application6" ForegroundText="dark" BackgroundColor="#000000">
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="images\splashscreen.png" />
+        <SplashScreen Image="ressources_statiques\images\splashscreen.png" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />
         </InitialRotationPreference>
