@@ -343,8 +343,12 @@ function agendaCanvasManager(events, canvasID, detailsID) {
                     $('#agendaDetailsDescription', detailsdiv).html(this.selectedEvent.content.description)
                     $('#agendaDetailsDate', detailsdiv).html(this.selectedEvent.content.textdate)
                     $('#agendaDetailsLieu', detailsdiv).html(this.selectedEvent.content.textlieu)
-                    $('#agendaDetailsImage img', detailsdiv).attr('src', infos.Root + '/' + this.selectedEvent.content.postername)
+                    //$('#agendaDetailsImage img', detailsdiv).attr('src', infos.Root + '/' + this.selectedEvent.content.postername)
+                    $('#agendaDetailsImage img', detailsdiv).attr('src', this.selectedEvent.content.postername)
                     $('#agendaDetailsImage img', detailsdiv).css('display', 'inline')
+                    
+                    var test = this.selectedEvent.content.postername;
+
                     break
                 }
             }
