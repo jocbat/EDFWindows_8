@@ -58,7 +58,9 @@
     var articlesList = new WinJS.Binding.List();
     var groupedItems = articlesList.createGrouped(groupKeySelector, groupDataSelector);
 
-    WinJS.xhr({ url: infos.Media }).then(function (rss) {
+    //WinJS.xhr({ url: infos.Media }).then(function (rss) { Pour les infos sur internet
+    WinJS.xhr({ url: infos.PagesMockLocales + "rss-pour-ipad-2588.xml" }).then(function (rss) {
+        var test = infos.PagesMockLocales + "rss-pour-ipad-2588.xml";
         var items = rss.responseXML.selectNodes("//item");
         var lastgroup = -1;
 
