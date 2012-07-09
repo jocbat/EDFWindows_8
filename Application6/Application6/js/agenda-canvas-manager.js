@@ -1,6 +1,6 @@
 ﻿
 /*
-Cette page est l'endroit opu s'effectue toute la gestion de l'agenda
+Cette page est l'endroit ou s'effectue toute la gestion de l'agenda
 L'agenda est est dessiné dans un canvas.
 Le dessin et la gestion des evenements de l'agenda est codé dans ce fichier
 l'idée est de coder une fonction qui sera appelée aux moment opportuns
@@ -202,24 +202,38 @@ function agendaCanvasManager(events, canvasID, detailsID) {
 
             this.ctx.moveTo(this.center.x, this.center.y)
             this.ctx.lineTo(10, this.center.y)
+            this.ctx.strokeText('Février', 10, this.center.y - 10)
 
             this.ctx.moveTo(this.center.x, this.center.y)
             this.ctx.lineTo(2 * this.center.x - 10, this.center.y)
+            this.ctx.strokeText('Mai', 2 * this.center.x - 30, this.center.y + 15)
 
             this.ctx.moveTo(this.center.x, this.center.y)
             this.ctx.lineTo(this.center.x / 2, this.center.y * (1 - Math.sqrt(3) / 2))
+            this.ctx.strokeText('Mars', this.center.x / 2 + 10, this.center.y * (1 - Math.sqrt(3) / 2))
+
+
 
             this.ctx.moveTo(this.center.x, this.center.y)
             this.ctx.lineTo(this.center.x * (1 + 1 / 2), this.center.y * (1 - Math.sqrt(3) / 2))
+            this.ctx.strokeText('Avril', this.center.x * (1 + 1 / 2) + 10, this.center.y * (1 - Math.sqrt(3) / 2) + 10)
 
             this.ctx.moveTo(this.center.x, this.center.y)
-            this.ctx.lineTo(this.center.x  / 2, this.center.y * (1 + Math.sqrt(3) / 2))
+            this.ctx.lineTo(this.center.x / 2, this.center.y * (1 + Math.sqrt(3) / 2))
+            this.ctx.strokeText('Juillet', this.center.x / 2 - 30, this.center.y * (1 + Math.sqrt(3) / 2))
 
             this.ctx.moveTo(this.center.x, this.center.y)
             this.ctx.lineTo(this.center.x * (1 + 1 / 2), this.center.y * (1 + Math.sqrt(3) / 2))
+            this.ctx.strokeText('Juin', this.center.x * (1 + 1 / 2) - 30, this.center.y * (1 + Math.sqrt(3) / 2), 70)
 
             this.ctx.strokeStyle = '#aaa';
-            this.ctx.strokeText('Fevrier', 3, this.center.y)
+            
+            //this.ctx.strokeText('Blabla', this.center.x * (1 + 1 / 2), this.center.y * (1 + Math.sqrt(3) / 2))
+
+
+            var test = this.center.x + " " + this.center.y
+
+
             this.ctx.lineWidth = 2
             this.ctx.stroke()
             this.ctx.closePath()
@@ -346,8 +360,6 @@ function agendaCanvasManager(events, canvasID, detailsID) {
                     //$('#agendaDetailsImage img', detailsdiv).attr('src', infos.Root + '/' + this.selectedEvent.content.postername)
                     $('#agendaDetailsImage img', detailsdiv).attr('src', this.selectedEvent.content.postername)
                     $('#agendaDetailsImage img', detailsdiv).css('display', 'inline')
-                    
-                    var test = this.selectedEvent.content.postername;
 
                     break
                 }
