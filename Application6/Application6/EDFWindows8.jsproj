@@ -87,6 +87,7 @@
     <Content Include="ressources_statiques\images\Metropolis_photo.png" />
     <Content Include="ressources_statiques\images\Nature_photo.png" />
     <Content Include="ressources_statiques\images\NuitEau_photo.png" />
+    <Content Include="ressources_statiques\images\Open_photos.png" />
     <Content Include="ressources_statiques\images\photo01_portrait.png" />
     <Content Include="ressources_statiques\images\photo02_portrait.png" />
     <Content Include="ressources_statiques\images\photo03_portrait.png" />
